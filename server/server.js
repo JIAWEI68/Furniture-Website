@@ -8,9 +8,8 @@ app.use(express.json());
 
 app.route("/furniture").get(FurnitureController.getAllFurniture);
 app.route("/sofas").get(FurnitureController.getAllSofas);
+app.route("/furniture").post(FurnitureController.InsertFurniture);
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-}
-);
+app.listen(3030, "127.0.0.1");
+console.log("Server running on port 3030");
 

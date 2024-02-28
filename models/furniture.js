@@ -119,3 +119,5 @@ class Furniture{
         this.category = category;
     }
 }
+
+module.exports = Furniture;
