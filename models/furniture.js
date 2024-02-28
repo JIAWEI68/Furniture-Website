@@ -1,6 +1,6 @@
 "use strict"
 
-class furniture{
+class Furniture{
     constructor(options) {
         const {
             id,

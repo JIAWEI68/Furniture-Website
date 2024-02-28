@@ -1,8 +1,8 @@
 "use strict";
 
-var db = require("../server/connection");
+let db = require("../server/connection");
 
-class furnitureDB {
+class FurnitureDB {
     getAllFurniture(callback) {
         let sql = "SELECT * FROM furniture AS A INNER JOIN furnitureFeatures AS B ON A.furniture_id = B.furniture_id";
         db.query(sql, callback);
@@ -13,4 +13,4 @@ class furnitureDB {
     }
 }
 
-module.exports = furnitureDB;
+module.exports = FurnitureDB;

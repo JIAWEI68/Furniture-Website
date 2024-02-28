@@ -1,7 +1,7 @@
 "use strict";
 
 const furnitureDB = require('../database/furnitureDB');
-const furniture = require("../models/furniture");
+const Furniture = require("../models/furniture");
 
 
 function getAllFurniture(req, res) {
